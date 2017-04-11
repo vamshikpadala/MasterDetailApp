@@ -1,2 +1,2 @@
-# codeForceApp
-# A master-detail App
+# CodeForce 360
+
