@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import LocalAuthentication
 
 class ViewController: UIViewController {
 
@@ -45,6 +46,8 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController: UIViewController? = storyboard.instantiateViewController(withIdentifier: "homeViewController")
         navigationController?.pushViewController(viewController!, animated: true)
+        
+        touchID()
 
     }
     @IBAction func SignUp(_ sender: Any) {
@@ -58,7 +61,63 @@ class ViewController: UIViewController {
             self.signUpBtn.transform = CGAffineTransform(scaleX: self.scaleConstant, y: self.scaleConstant)
         })
     }
- 
+    func touchID(){
+        
+        let authUser : LAContext = LAContext()
+        var touchIdError : NSError?
+        
+        guard authUser.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &touchIdError) else {
+            
+            showAlertViewIfNoBiometricSensorHasBeenDetected()
+            return
+            
+        }
+        authUser.evaluatePolicy(
+            .deviceOwnerAuthenticationWithBiometrics,
+            localizedReason: "Please use Touch ID to Sign in",
+            reply: { [unowned self] (success, error) -> Void in
+                
+                if( success ) {
+                    self.navigateToAuthenticatedViewController()
+                    
+                }
+        })
+    }
+    
+    func showAlertViewIfNoBiometricSensorHasBeenDetected(){
+        
+        showAlertWithTitle(title: "Error", message: "Please setup Touch ID or login with your login credentials")
+        
+    }
+    
+    func showAlertWithTitle( title:String, message:String ) {
+        
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertVC.addAction(okAction)
+        
+        DispatchQueue.main.async() { () -> Void in
+            
+            self.present(alertVC, animated: true, completion: nil)
+            
+        }
+        
+    }
+    func navigateToAuthenticatedViewController(){
+        
+        if let loggedInVC = storyboard?.instantiateViewController(withIdentifier: "SWRevealViewController") {
+            
+            DispatchQueue.main.async() { () -> Void in
+                
+                self.navigationController?.pushViewController(loggedInVC, animated: true)
+                
+            }
+            
+        }
+        
+    }
+
 
 }
 
