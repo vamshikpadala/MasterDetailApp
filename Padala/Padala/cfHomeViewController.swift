@@ -11,13 +11,14 @@ import UIKit
 class CFHomeViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         webView.delegate = self
         
-        navigationController?.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "AvenirNext-Medium", size: 24)!]
-        navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor .white]
+        navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "AvenirNext-Medium", size: 24)!]
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor .white]
         navigationController?.navigationBar.topItem?.title = "Home"
         
         navigationController?.navigationBar.barTintColor = UIColor.orange
@@ -28,15 +29,16 @@ class CFHomeViewController: UIViewController, UIWebViewDelegate {
         navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         
         if let url = URL(string: "http://www.codeforce.com/") {
+			
             let request = URLRequest(url: url)
             webView.loadRequest(request)
         }
-        
     }
-    func logout(){
+    
+    @objc func logout() {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let viewController: UIViewController? = storyboard.instantiateViewController(withIdentifier: "ViewController")
         navigationController?.pushViewController(viewController!, animated: true)
-        
     }
 }

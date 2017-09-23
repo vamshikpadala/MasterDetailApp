@@ -12,7 +12,7 @@
 		F154758E1E045F8B00EC6194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F154758C1E045F8B00EC6194 /* Main.storyboard */; };
 		F15475901E045F8B00EC6194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F154758F1E045F8B00EC6194 /* Assets.xcassets */; };
 		F15475931E045F8B00EC6194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15475911E045F8B00EC6194 /* LaunchScreen.storyboard */; };
-		F154759D1E04610300EC6194 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154759C1E04610300EC6194 /* homeViewController.swift */; };
+		F154759D1E04610300EC6194 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154759C1E04610300EC6194 /* HomeViewController.swift */; };
 		F182E7381E99F46600F204FE /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F182E7271E99F46600F204FE /* SWRevealViewController.m */; };
 		F182E73A1E99F4B500F204FE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F182E7391E99F4B500F204FE /* MenuViewController.swift */; };
 		F182E73C1E9A03FC00F204FE /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = F182E73B1E9A03FC00F204FE /* ForgotPassword.swift */; };
@@ -39,7 +39,7 @@
 		F154758F1E045F8B00EC6194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15475921E045F8B00EC6194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F15475941E045F8B00EC6194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F154759C1E04610300EC6194 /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		F154759C1E04610300EC6194 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F182E7151E99F3E200F204FE /* Padala-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Padala-Bridging-Header.h"; sourceTree = "<group>"; };
 		F182E7261E99F46600F204FE /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		F182E7271E99F46600F204FE /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F154758A1E045F8B00EC6194 /* ViewController.swift */,
-				F154759C1E04610300EC6194 /* homeViewController.swift */,
+				F154759C1E04610300EC6194 /* HomeViewController.swift */,
 				F1B3405D1E99BB4A002DBFEA /* SignUpViewController.swift */,
 				F182E73B1E9A03FC00F204FE /* ForgotPassword.swift */,
 				F182E7431E9A0EA400F204FE /* ForgotUsername.swift */,
@@ -176,7 +176,7 @@
 					F15475841E045F8A00EC6194 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = NJJ8D38RGZ;
-						LastSwiftMigration = 0830;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -218,7 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F154758B1E045F8B00EC6194 /* ViewController.swift in Sources */,
-				F154759D1E04610300EC6194 /* homeViewController.swift in Sources */,
+				F154759D1E04610300EC6194 /* HomeViewController.swift in Sources */,
 				F182E7441E9A0EA400F204FE /* ForgotUsername.swift in Sources */,
 				F182E76B1E9BD33A00F204FE /* DigitalViewController.swift in Sources */,
 				F182E7381E99F46600F204FE /* SWRevealViewController.m in Sources */,
@@ -308,6 +308,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -351,6 +352,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -359,6 +361,7 @@
 		F15475981E045F8B00EC6194 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NJJ8D38RGZ;
@@ -368,13 +371,15 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Padala/Padala-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		F15475991E045F8B00EC6194 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NJJ8D38RGZ;
@@ -383,7 +388,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vamshikpadala.Padala;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Padala/Padala-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
