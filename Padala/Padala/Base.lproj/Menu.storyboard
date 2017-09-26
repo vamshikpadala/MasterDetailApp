@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Digital View Controller-->
+        <scene sceneID="MdF-LR-9Mf">
+            <objects>
+                <viewController storyboardIdentifier="Digital" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KUw-4O-nd0" customClass="DigitalViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UUt-qK-tO3"/>
+                        <viewControllerLayoutGuide type="bottom" id="kLK-Vr-mh4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bvg-pi-ybn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrm-bl-RFJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lrm-bl-RFJ" firstAttribute="leading" secondItem="bvg-pi-ybn" secondAttribute="leading" id="EZF-iv-RTS"/>
+                            <constraint firstItem="kLK-Vr-mh4" firstAttribute="top" secondItem="Lrm-bl-RFJ" secondAttribute="bottom" id="cOM-4M-daq"/>
+                            <constraint firstAttribute="trailing" secondItem="Lrm-bl-RFJ" secondAttribute="trailing" id="lGw-nm-UMJ"/>
+                            <constraint firstItem="Lrm-bl-RFJ" firstAttribute="top" secondItem="bvg-pi-ybn" secondAttribute="top" id="vUJ-oV-64N"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Lrm-bl-RFJ" id="Ol4-G0-cCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLY-Ka-BeW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-853.60000000000002" y="-563.56821589205401"/>
+        </scene>
+        <!--Technology View Controller-->
+        <scene sceneID="WXG-bz-WtO">
+            <objects>
+                <viewController storyboardIdentifier="Technology" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vlm-tv-QyP" customClass="TechnologyViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o86-P6-2VG"/>
+                        <viewControllerLayoutGuide type="bottom" id="pP4-aw-nwC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fzc-qp-m4s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tO4-ze-F1T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tO4-ze-F1T" firstAttribute="leading" secondItem="fzc-qp-m4s" secondAttribute="leading" id="CCm-lU-5PJ"/>
+                            <constraint firstAttribute="trailing" secondItem="tO4-ze-F1T" secondAttribute="trailing" id="Gct-pO-kjb"/>
+                            <constraint firstItem="tO4-ze-F1T" firstAttribute="top" secondItem="fzc-qp-m4s" secondAttribute="top" id="HKi-xv-Ulh"/>
+                            <constraint firstItem="pP4-aw-nwC" firstAttribute="top" secondItem="tO4-ze-F1T" secondAttribute="bottom" id="TJ2-xM-cDi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="tO4-ze-F1T" id="Cgc-ki-bZQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5El-u0-13v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="-563.56821589205401"/>
+        </scene>
+        <!--Diversity View Controller-->
+        <scene sceneID="nI6-0U-QXw">
+            <objects>
+                <viewController storyboardIdentifier="Diversity" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D2E-vT-L6I" customClass="DiversityViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MkF-N2-4FO"/>
+                        <viewControllerLayoutGuide type="bottom" id="fVu-cq-u2f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g6c-hZ-OpD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rex-T5-orp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Rex-T5-orp" secondAttribute="trailing" id="KF7-Fc-Qxa"/>
+                            <constraint firstItem="Rex-T5-orp" firstAttribute="leading" secondItem="g6c-hZ-OpD" secondAttribute="leading" id="WwM-mN-chK"/>
+                            <constraint firstItem="Rex-T5-orp" firstAttribute="top" secondItem="g6c-hZ-OpD" secondAttribute="top" id="dmy-e3-hd5"/>
+                            <constraint firstItem="fVu-cq-u2f" firstAttribute="top" secondItem="Rex-T5-orp" secondAttribute="bottom" id="fNv-Am-jrM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Rex-T5-orp" id="1kX-bS-tmK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pra-xr-33j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="793" y="-527"/>
+        </scene>
+        <!--Outsourcing View Controller-->
+        <scene sceneID="aYX-c6-vMR">
+            <objects>
+                <viewController storyboardIdentifier="Outsourcing" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ygN-ar-QM4" customClass="OutsourcingViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WI0-OG-ypx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cu6-yW-ATj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DCR-ir-4ZH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zq9-TV-vuq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Zq9-TV-vuq" secondAttribute="trailing" id="1s5-WX-jYT"/>
+                            <constraint firstItem="Cu6-yW-ATj" firstAttribute="top" secondItem="Zq9-TV-vuq" secondAttribute="bottom" id="PAQ-kD-Cda"/>
+                            <constraint firstItem="Zq9-TV-vuq" firstAttribute="top" secondItem="DCR-ir-4ZH" secondAttribute="top" id="VtQ-mU-UZ7"/>
+                            <constraint firstItem="Zq9-TV-vuq" firstAttribute="leading" secondItem="DCR-ir-4ZH" secondAttribute="leading" id="t6h-TG-0ck"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Zq9-TV-vuq" id="Hyw-ju-aaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Tj-hY-eqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1162.4000000000001" y="116.49175412293854"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="g3k-y1-YrI">
+            <objects>
+                <viewController storyboardIdentifier="SWRevealViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ozN-2t-ysy" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QvE-8z-zza"/>
+                        <viewControllerLayoutGuide type="bottom" id="gsw-u8-NSJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4pv-qM-YNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="2uS-qP-hhw" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="clR-kU-xPk"/>
+                        <segue destination="Leg-me-pDS" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="wMm-Rs-TWP"/>
+                        <segue destination="DTU-ML-o60" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="RXr-vz-Vh6"/>
+                        <segue destination="brs-ec-mwG" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="e8r-wl-3sM"/>
+                        <segue destination="6ja-NA-Zou" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="2fq-XL-XD6"/>
+                        <segue destination="ygN-ar-QM4" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="xI6-eG-3O5"/>
+                        <segue destination="KUw-4O-nd0" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="rQa-1d-0KN"/>
+                        <segue destination="Vlm-tv-QyP" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="olV-zk-uOu"/>
+                        <segue destination="D2E-vT-L6I" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="2UA-6E-zzo"/>
+                        <segue destination="oDc-Up-Vyz" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="XIP-Rf-8A7"/>
+                        <segue destination="xIL-2Y-E9C" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="j0R-q2-j5s"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fw-gf-r4j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="115"/>
+        </scene>
+        <!--Code Force Menu-->
+        <scene sceneID="G6K-Di-XAv">
+            <objects>
+                <viewController storyboardIdentifier="CodeForceMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Leg-me-pDS" customClass="CodeForceMenu" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uaw-rX-Pdr"/>
+                        <viewControllerLayoutGuide type="bottom" id="AaR-JP-1ZS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mQk-El-mlD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YLx-px-yuZ">
+                                <rect key="frame" x="0.0" y="186" width="375" height="481"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="qGv-Dx-eqc"/>
+                                    <constraint firstAttribute="height" constant="481" id="tc5-u1-a2C"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="FXz-gW-8f1" customClass="MenuCell" customModule="Padala" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FXz-gW-8f1" id="smH-Jg-woY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBo-Tt-ub2">
+                                                    <rect key="frame" x="20" y="10" width="260" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                                    <color key="textColor" red="0.30755761269999998" green="0.24025124310000001" blue="0.1423944533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="menuLabel" destination="yBo-Tt-ub2" id="A0k-z7-Qhm"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cf360logo" translatesAutoresizingMaskIntoConstraints="NO" id="Xr7-Po-opz">
+                                <rect key="frame" x="36" y="20" width="217" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="uvi-K3-48j"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YLx-px-yuZ" secondAttribute="trailing" id="2lq-qP-utm"/>
+                            <constraint firstItem="YLx-px-yuZ" firstAttribute="leading" secondItem="mQk-El-mlD" secondAttribute="leading" id="50S-vg-AaG"/>
+                            <constraint firstItem="YLx-px-yuZ" firstAttribute="top" secondItem="Xr7-Po-opz" secondAttribute="bottom" constant="16" id="Jou-zP-fWv"/>
+                            <constraint firstItem="Xr7-Po-opz" firstAttribute="leading" secondItem="mQk-El-mlD" secondAttribute="leadingMargin" constant="20" id="MMQ-bq-YvF"/>
+                            <constraint firstItem="Xr7-Po-opz" firstAttribute="top" secondItem="Uaw-rX-Pdr" secondAttribute="bottom" id="o1X-UU-dAQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cfLogo" destination="Xr7-Po-opz" id="ggP-rh-0de"/>
+                        <outlet property="menuTableView" destination="YLx-px-yuZ" id="qlj-qv-V8w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMb-r9-Ox6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586.39999999999998" y="112.89355322338831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kHe-Hj-XQ2">
+            <objects>
+                <navigationController id="2uS-qP-hhw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MSW-py-Xi7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1xY-om-XZN" kind="relationship" relationship="rootViewController" id="eA4-Gn-1fl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="if6-og-3f5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="1104"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="1sN-8V-zCe">
+            <objects>
+                <viewController storyboardIdentifier="AboutUs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DTU-ML-o60" customClass="AboutUsViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6am-Ev-Yqy"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ifb-8J-6rR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Zn-ok-cX3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyG-DA-mOB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="O2J-hC-MHK"/>
+                                    <constraint firstAttribute="height" constant="667" id="hzt-XM-VyI"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DyG-DA-mOB" secondAttribute="trailing" id="Obd-74-XMM"/>
+                            <constraint firstItem="Ifb-8J-6rR" firstAttribute="top" secondItem="DyG-DA-mOB" secondAttribute="bottom" id="TMe-BU-jUV"/>
+                            <constraint firstItem="DyG-DA-mOB" firstAttribute="leading" secondItem="2Zn-ok-cX3" secondAttribute="leading" id="tg1-fR-eIg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="DyG-DA-mOB" id="0va-yQ-CWe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICt-SC-9Vb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1370.4000000000001" y="874.81259370314854"/>
+        </scene>
+        <!--Staffing View Controller-->
+        <scene sceneID="aXx-sK-xIL">
+            <objects>
+                <viewController storyboardIdentifier="Staffing" useStoryboardIdentifierAsRestorationIdentifier="YES" id="brs-ec-mwG" customClass="StaffingViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YKv-qc-cnK"/>
+                        <viewControllerLayoutGuide type="bottom" id="U5w-55-crN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="483-pl-Eub">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bG-QS-aeU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5bG-QS-aeU" firstAttribute="leading" secondItem="483-pl-Eub" secondAttribute="leading" id="HDf-bk-Jp6"/>
+                            <constraint firstItem="U5w-55-crN" firstAttribute="top" secondItem="5bG-QS-aeU" secondAttribute="bottom" id="LDC-zZ-Ge9"/>
+                            <constraint firstItem="5bG-QS-aeU" firstAttribute="top" secondItem="483-pl-Eub" secondAttribute="top" id="icF-Pi-agX"/>
+                            <constraint firstAttribute="trailing" secondItem="5bG-QS-aeU" secondAttribute="trailing" id="nc6-Q6-50D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="5bG-QS-aeU" id="byE-z1-TLO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54L-kk-qfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717.5999999999999" y="725.48725637181417"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="SMD-Zz-Odl">
+            <objects>
+                <viewController storyboardIdentifier="CFHome" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6ja-NA-Zou" customClass="CFHomeViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vfr-Ga-lKu"/>
+                        <viewControllerLayoutGuide type="bottom" id="YoH-hT-0lk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VkT-iF-ekw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4r-qe-dCj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="YAJ-OJ-BDX"/>
+                                    <constraint firstAttribute="width" constant="375" id="xc1-7G-68d"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c4r-qe-dCj" firstAttribute="leading" secondItem="VkT-iF-ekw" secondAttribute="leading" id="16Q-lI-ncO"/>
+                            <constraint firstItem="YoH-hT-0lk" firstAttribute="top" secondItem="c4r-qe-dCj" secondAttribute="bottom" id="dDP-xc-uiV"/>
+                            <constraint firstAttribute="trailing" secondItem="c4r-qe-dCj" secondAttribute="trailing" id="iW0-QN-37O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="c4r-qe-dCj" id="5lt-27-w2a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4j-g5-Fjr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-874.39999999999998" y="1611.5442278860571"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="0U7-kA-ZbX">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1xY-om-XZN" customClass="MenuViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ro0-5i-Aa4"/>
+                        <viewControllerLayoutGuide type="bottom" id="OC5-91-2R3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uml-xF-deJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forbes2" translatesAutoresizingMaskIntoConstraints="NO" id="Fsu-Y6-7NQ">
+                                <rect key="frame" x="16" y="329" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Staffing" translatesAutoresizingMaskIntoConstraints="NO" id="TX8-bB-hAy">
+                                <rect key="frame" x="239" y="329" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Inc500" translatesAutoresizingMaskIntoConstraints="NO" id="toN-Zz-D0P">
+                                <rect key="frame" x="16" y="495" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SystemCert" translatesAutoresizingMaskIntoConstraints="NO" id="bsy-Zv-t9S">
+                                <rect key="frame" x="239" y="495" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6nQ-Z9-dPz">
+                                <rect key="frame" x="97" y="84" width="180" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cf360logo" translatesAutoresizingMaskIntoConstraints="NO" id="dTX-Wr-jfo">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="The-8g-GLC"/>
+                                    <constraint firstAttribute="height" constant="180" id="zWC-y8-oVV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6nQ-Z9-dPz" firstAttribute="top" secondItem="ro0-5i-Aa4" secondAttribute="bottom" constant="20" id="hXh-CR-5cx"/>
+                            <constraint firstItem="6nQ-Z9-dPz" firstAttribute="leading" secondItem="uml-xF-deJ" secondAttribute="leading" constant="97" id="jsN-Qo-QDT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1wz-Av-mq1">
+                        <leftBarButtonItems>
+                            <barButtonItem image="ham" id="6eZ-5z-qto">
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                            <barButtonItem image="Hamburger.png" id="7xz-ux-r6A">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" image="Logout1" id="jxw-ZA-oyu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="rightBarButtonTappedWith_sender:" destination="1xY-om-XZN" id="Zp1-9H-ecS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cfImageView" destination="6nQ-Z9-dPz" id="vUH-XX-sBb"/>
+                        <outlet property="incImage" destination="toN-Zz-D0P" id="v0M-hZ-k8U"/>
+                        <outlet property="logoutBtn" destination="jxw-ZA-oyu" id="xOp-Z8-crv"/>
+                        <outlet property="menuBtn" destination="6eZ-5z-qto" id="EsX-aH-YHX"/>
+                        <outlet property="staffImage" destination="TX8-bB-hAy" id="cau-hz-mGo"/>
+                        <outlet property="systemImage" destination="bsy-Zv-t9S" id="l3r-ej-6bW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3nk-aj-hfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96.799999999999997" y="1984.8575712143929"/>
+        </scene>
+        <!--Job Zone View Controller-->
+        <scene sceneID="Sr3-sZ-ZYN">
+            <objects>
+                <viewController storyboardIdentifier="JobZone" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xIL-2Y-E9C" customClass="JobZoneViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="urb-dL-wat"/>
+                        <viewControllerLayoutGuide type="bottom" id="0AR-Ft-usg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p1m-lw-UWx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-wd-vE7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ddt-wd-vE7" firstAttribute="top" secondItem="p1m-lw-UWx" secondAttribute="top" id="2QZ-gm-2Cj"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddt-wd-vE7" secondAttribute="trailing" id="3DA-ZQ-Ggv"/>
+                            <constraint firstItem="Ddt-wd-vE7" firstAttribute="leading" secondItem="p1m-lw-UWx" secondAttribute="leading" id="6Zj-vb-6mF"/>
+                            <constraint firstItem="0AR-Ft-usg" firstAttribute="top" secondItem="Ddt-wd-vE7" secondAttribute="bottom" id="FiS-bS-aOd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="Ddt-wd-vE7" id="NbJ-Yq-dSH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJW-eA-P9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="1614.2428785607199"/>
+        </scene>
+        <!--Contact Us View Controller-->
+        <scene sceneID="BCw-zJ-Ss4">
+            <objects>
+                <viewController storyboardIdentifier="ContactUs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oDc-Up-Vyz" customClass="ContactUsViewController" customModule="Padala" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mW2-hv-w4v"/>
+                        <viewControllerLayoutGuide type="bottom" id="9S1-D1-mSl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jPg-Rq-ggb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHb-GL-Oes">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zHb-GL-Oes" firstAttribute="top" secondItem="jPg-Rq-ggb" secondAttribute="top" id="OHG-ci-eeC"/>
+                            <constraint firstItem="9S1-D1-mSl" firstAttribute="top" secondItem="zHb-GL-Oes" secondAttribute="bottom" id="nJy-ma-j06"/>
+                            <constraint firstItem="zHb-GL-Oes" firstAttribute="leading" secondItem="jPg-Rq-ggb" secondAttribute="leading" id="u4Z-cQ-CkH"/>
+                            <constraint firstAttribute="trailing" secondItem="zHb-GL-Oes" secondAttribute="trailing" id="y7H-xh-yxX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="zHb-GL-Oes" id="0R7-Bc-pTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnb-2W-oJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1893.5999999999999" y="1614.2428785607199"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Hamburger.png" width="32" height="32"/>
+        <image name="Inc500" width="72" height="81"/>
+        <image name="Logout1" width="36" height="36"/>
+        <image name="Staffing" width="72" height="81"/>
+        <image name="SystemCert" width="72" height="81"/>
+        <image name="cf360logo" width="217" height="170"/>
+        <image name="forbes2" width="72" height="55"/>
+        <image name="ham" width="24" height="24"/>
+    </resources>
+</document>

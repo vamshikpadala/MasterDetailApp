@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F15475891E045F8B00EC6194 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15475881E045F8B00EC6194 /* AppDelegate.swift */; };
 		F154758B1E045F8B00EC6194 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154758A1E045F8B00EC6194 /* ViewController.swift */; };
-		F154758E1E045F8B00EC6194 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F154758C1E045F8B00EC6194 /* Main.storyboard */; };
+		F154758E1E045F8B00EC6194 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F154758C1E045F8B00EC6194 /* Menu.storyboard */; };
 		F15475901E045F8B00EC6194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F154758F1E045F8B00EC6194 /* Assets.xcassets */; };
 		F15475931E045F8B00EC6194 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F15475911E045F8B00EC6194 /* LaunchScreen.storyboard */; };
 		F154759D1E04610300EC6194 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F154759C1E04610300EC6194 /* HomeViewController.swift */; };
@@ -29,13 +29,14 @@
 		F182E76D1E9BD34B00F204FE /* TechnologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F182E76C1E9BD34B00F204FE /* TechnologyViewController.swift */; };
 		F182E76F1E9BD36C00F204FE /* DiversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F182E76E1E9BD36C00F204FE /* DiversityViewController.swift */; };
 		F1B3405E1E99BB4A002DBFEA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3405D1E99BB4A002DBFEA /* SignUpViewController.swift */; };
+		F1F24EFA1F79EA1800002C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F24EF91F79EA1800002C61 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F15475851E045F8B00EC6194 /* Padala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Padala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15475881E045F8B00EC6194 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F154758A1E045F8B00EC6194 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F154758D1E045F8B00EC6194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F154758D1E045F8B00EC6194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Menu.storyboard; sourceTree = "<group>"; };
 		F154758F1E045F8B00EC6194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15475921E045F8B00EC6194 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F15475941E045F8B00EC6194 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +59,7 @@
 		F182E76C1E9BD34B00F204FE /* TechnologyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnologyViewController.swift; sourceTree = "<group>"; };
 		F182E76E1E9BD36C00F204FE /* DiversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiversityViewController.swift; sourceTree = "<group>"; };
 		F1B3405D1E99BB4A002DBFEA /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F1F24EF91F79EA1800002C61 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,8 @@
 				F15475881E045F8B00EC6194 /* AppDelegate.swift */,
 				F182E7551E9AE1F600F204FE /* Account */,
 				F182E7561E9AE26500F204FE /* Codeforce */,
-				F154758C1E045F8B00EC6194 /* Main.storyboard */,
+				F154758C1E045F8B00EC6194 /* Menu.storyboard */,
+				F1F24EF91F79EA1800002C61 /* Main.storyboard */,
 				F15475911E045F8B00EC6194 /* LaunchScreen.storyboard */,
 				F182E7571E9AE28700F204FE /* Supporting Files */,
 				F154758F1E045F8B00EC6194 /* Assets.xcassets */,
@@ -170,7 +173,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Vamshi krishna Padala";
 				TargetAttributes = {
 					F15475841E045F8A00EC6194 = {
@@ -206,7 +209,8 @@
 			files = (
 				F15475931E045F8B00EC6194 /* LaunchScreen.storyboard in Resources */,
 				F15475901E045F8B00EC6194 /* Assets.xcassets in Resources */,
-				F154758E1E045F8B00EC6194 /* Main.storyboard in Resources */,
+				F154758E1E045F8B00EC6194 /* Menu.storyboard in Resources */,
+				F1F24EFA1F79EA1800002C61 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,12 +246,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F154758C1E045F8B00EC6194 /* Main.storyboard */ = {
+		F154758C1E045F8B00EC6194 /* Menu.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F154758D1E045F8B00EC6194 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Menu.storyboard;
 			sourceTree = "<group>";
 		};
 		F15475911E045F8B00EC6194 /* LaunchScreen.storyboard */ = {
@@ -270,7 +274,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -278,7 +284,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
@@ -322,7 +332,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -330,7 +342,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;

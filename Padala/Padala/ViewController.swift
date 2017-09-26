@@ -34,12 +34,16 @@ class ViewController: UIViewController {
 		signUpBtn.layer.shadowOpacity = 8
 		signUpBtn.layer.shadowColor = UIColor.lightGray.cgColor
 		signUpBtn.alpha = 0
-		navigationController?.navigationBar.isHidden = true
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(true)
 		animateButton()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		self.navigationController?.navigationBar.isHidden = true
 	}
 	
 	@IBAction func SignIn(_ sender: Any) {

@@ -23,6 +23,9 @@ class ForgotUsername: UIViewController, UITextFieldDelegate {
 		doneButton.layer.opacity = 8
 		doneButton.layer.shadowRadius = 8
 		doneButton.layer.shadowColor = UIColor.lightGray.cgColor
+		
+		self.navigationController?.navigationBar.isHidden = false
+		self.title = "Forgot Username"
 	}
 	
 	@IBAction func backTapped(_ sender: Any) {

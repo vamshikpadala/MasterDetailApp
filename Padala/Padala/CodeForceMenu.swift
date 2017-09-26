@@ -43,7 +43,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Home" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "CFHome") as! CFHomeViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -52,7 +52,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "About Us" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "AboutUs") as! AboutUsViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -61,7 +61,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Staffing" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Staffing") as! StaffingViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			revealViewController.pushFrontViewController(newFrontController, animated: true)
@@ -69,7 +69,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Outsourcing" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Outsourcing") as! OutsourcingViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -78,7 +78,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Digital" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Digital") as! DigitalViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -87,7 +87,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Technology" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Technology") as! TechnologyViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -96,7 +96,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Diversity" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "Diversity") as! DiversityViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -105,7 +105,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		
 		if cell.menuLabel.text! == "Jobzone" {
 			
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "JobZone") as! JobZoneViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			
@@ -113,7 +113,7 @@ class CodeForceMenu: UIViewController, UITableViewDelegate, UITableViewDataSourc
 		}
 		
 		if cell.menuLabel.text! == "Contact Us" {
-			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+			let mainstoryboard:UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
 			let newViewcontroller = mainstoryboard.instantiateViewController(withIdentifier: "ContactUs") as! ContactUsViewController
 			let newFrontController = UINavigationController.init(rootViewController: newViewcontroller)
 			

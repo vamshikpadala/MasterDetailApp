@@ -23,7 +23,9 @@ class ForgotPassword: UIViewController {
         doneButton.layer.opacity = 8
         doneButton.layer.shadowRadius = 8
         doneButton.layer.shadowColor = UIColor.lightGray.cgColor
-        // Do any additional setup after loading the view.
+		
+		self.navigationController?.navigationBar.isHidden = false
+		self.title = "Forgot Password"
     }
     
     @IBAction func backTapped(_ sender: Any) {

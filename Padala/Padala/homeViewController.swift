@@ -15,8 +15,7 @@ class HomeViewController: UIViewController {
 	@IBOutlet weak var signInButton: UIButton!
 	@IBOutlet weak var forgotPwd: UIButton!
 	@IBOutlet weak var forgotUname: UIButton!
-	@IBOutlet weak var navigationBar: UINavigationBar!
-	@IBOutlet weak var barButtonItem: UIBarButtonItem!
+
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -29,6 +28,9 @@ class HomeViewController: UIViewController {
 		
 		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
 		view.addGestureRecognizer(tapGesture)
+		
+		self.navigationController?.navigationBar.isHidden = false
+		self.title = "Sign In"
 	}
 	
 	@IBAction func logOut(_ sender: Any) {
@@ -40,9 +42,9 @@ class HomeViewController: UIViewController {
 	
 	@IBAction func SignInTapped(_ sender: Any) {
 		
-		let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+		let storyboard = UIStoryboard(name: "Menu", bundle: Bundle.main)
 		let viewController: UIViewController? = storyboard.instantiateViewController(withIdentifier: "SWRevealViewController")
-		navigationController?.pushViewController(viewController!, animated: true)
+		self.present(viewController!, animated: true, completion: nil)
 	}
 	
 	@IBAction func forgotPwdTapped(_ sender : Any){

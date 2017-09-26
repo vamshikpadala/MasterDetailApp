@@ -37,6 +37,9 @@ class SignUpViewController: UIViewController {
 		
 		let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
 		view.addGestureRecognizer(tapGesture)
+		
+		self.navigationController?.navigationBar.isHidden = false
+		self.title = "Sign Up"
 	}
 	
 	@IBAction func backButtonTapped(_ sender: Any) {

@@ -40,6 +40,6 @@ class AboutUsViewController: UIViewController, UIWebViewDelegate {
 		
 		let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
 		let viewController: UIViewController? = storyboard.instantiateViewController(withIdentifier: "ViewController")
-		navigationController?.pushViewController(viewController!, animated: true)
+		self.present(viewController!, animated: true, completion: nil)
 	}
 }
