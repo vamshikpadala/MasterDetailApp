@@ -13,10 +13,9 @@ class MenuViewController: UIViewController {
 	
 	@IBOutlet weak var menuBtn: UIBarButtonItem!
 	@IBOutlet weak var logoutBtn: UIBarButtonItem!
-	@IBOutlet weak var cfImageView: UIView!
-	@IBOutlet weak var incImage: UIImageView!
-	@IBOutlet weak var staffImage: UIImageView!
-	@IBOutlet weak var systemImage: UIImageView!
+	@IBOutlet weak var cfImageView: UIImageView!
+	@IBOutlet weak var topStack: UIStackView!
+	@IBOutlet weak var bottomStack: UIStackView!
 	
 	
 	override func viewDidLoad() {
@@ -32,6 +31,18 @@ class MenuViewController: UIViewController {
 			menuBtn.target = self.revealViewController()
 			menuBtn.action = #selector(SWRevealViewController.revealToggle(_:))
 		}
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		
+		UIApplication.shared.statusBarStyle = .lightContent
+	}
+	
+	override func viewWillDisappear(_ animated: Bool) {
+		 super.viewWillAppear(animated)
+		
+		UIApplication.shared.statusBarStyle = .default
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {

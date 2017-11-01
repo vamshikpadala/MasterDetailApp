@@ -8,15 +8,19 @@
 
 import UIKit
 
-class CFHomeViewController: UIViewController, UIWebViewDelegate {
-    
-    @IBOutlet weak var webView: UIWebView!
-    
+class CFHomeViewController: UIViewController {
+	
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.delegate = self
-        
+		edgesForExtendedLayout = []
+		
+		let webView = UIWebView(frame: self.view.frame)
+		webView.scalesPageToFit = true
+		
+		view.addSubview(webView)
+		addConstraints(for: webView)
+		
         navigationController?.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "AvenirNext-Medium", size: 24)!]
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor .white]
         navigationController?.navigationBar.topItem?.title = "Home"
@@ -41,4 +45,19 @@ class CFHomeViewController: UIViewController, UIWebViewDelegate {
         let viewController: UIViewController? = storyboard.instantiateViewController(withIdentifier: "ViewController")
         self.present(viewController!, animated: true, completion: nil)
     }
+	
+	private func addConstraints(for webView: UIWebView) {
+		
+		webView.translatesAutoresizingMaskIntoConstraints = false
+		
+		let leadingConstraint = NSLayoutConstraint(item: webView, attribute: .leading, relatedBy: .equal, toItem: view, attribute: .leading, multiplier: 1, constant: 0)
+		
+		let trailingConstraint = NSLayoutConstraint(item: webView, attribute: .trailing, relatedBy: .equal, toItem: view, attribute: .trailing, multiplier: 1, constant: 0)
+		
+		let topConstraint = NSLayoutConstraint(item: webView, attribute: .top, relatedBy: .equal, toItem: view, attribute: .top, multiplier: 1, constant: 0)
+		
+		let bottomConstraint = NSLayoutConstraint(item: webView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0)
+		
+		view.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
+	}
 }
